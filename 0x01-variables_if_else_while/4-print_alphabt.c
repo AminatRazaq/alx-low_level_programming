@@ -10,17 +10,13 @@
 int main(void)
 {
 	int ch = 'a';
-	int ch2 = 'A';
 
 	while (ch <= 'z')
 	{
-		putchar(ch);
-		ch++;
-	}
-	while (ch2 <= 'Z')
-	{
-		putchar(ch2);
-		ch++;
+		if (!(ch == e) || !(ch == p))
+		{
+			putchar(ch);
+			ch++;
 	}
 	putchar('\n');
 	return (0);
