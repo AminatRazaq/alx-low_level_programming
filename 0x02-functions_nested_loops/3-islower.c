@@ -4,7 +4,9 @@
 /**
  * _islower - check the code
  *
- * Return: Always 0 (Success)
+ * @c: character to be checked
+ *
+ * Return: 1 if @c is lowercase else 0
  *
  */
 
