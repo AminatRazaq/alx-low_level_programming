@@ -40,7 +40,7 @@ void times_table(void)
 		}
 		if (s == e)
 			_putchar('\n');
-		s++
+		s++;
 	}
 	s = 0;
 	i++;
