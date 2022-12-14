@@ -17,30 +17,30 @@ void times_table(void)
 	{
 		while (s <= e)
 		{
-			int product = i * s;
+			int prodt = i * s;
 
 			if (s != 0)
 			{
 				_putchar(',');
-				if (product < 10)
+				if (prodt < 10)
 				{
 					_putchar(' ');
 					_putchar(' ');
 				}
+				else 
+					_putchar(' ');
+			}
+			if (prodt < 10)
+				_putchar(prodt + '0');
 			}
 			else
-				_putchar(' ');
-		}
-		if (product < 10)
-			_putchar(product + '0');
-		else
-		{
-			_putchar(product / 10 + '0');
-			_putchar(product % 10 + '0');
-		}
-		if (s == e)
-			_putchar('\n');
-		s++;
+			{
+				_putchar(prodt / 10 + '0');
+				_putchar(prodt % 10 + '0');
+			}
+			if (s == e)
+				_putchar('\n');
+			s++;
 	}
 	s = 0;
 	i++;
