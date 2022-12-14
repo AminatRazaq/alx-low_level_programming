@@ -11,7 +11,7 @@
 
 void times_table(void)
 {
-	int s = 0, e = 9, i = 0, product = 0;
+	int s = 0, e = 9, i = 0, product = i * s;
 
 	while (i  <= 9)
 	{
