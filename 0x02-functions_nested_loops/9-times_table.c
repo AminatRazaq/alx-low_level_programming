@@ -27,12 +27,11 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(' ');
 				}
-				else 
+				else
 					_putchar(' ');
 			}
 			if (prodt < 10)
 				_putchar(prodt + '0');
-			}
 			else
 			{
 				_putchar(prodt / 10 + '0');
@@ -41,7 +40,8 @@ void times_table(void)
 			if (s == e)
 				_putchar('\n');
 			s++;
+		}
+		s = 0;
+		i++;
 	}
-	s = 0;
-	i++;
 }
