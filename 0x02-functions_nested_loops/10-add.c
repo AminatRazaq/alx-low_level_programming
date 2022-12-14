@@ -4,7 +4,7 @@
 /**
  *  add - check the code
  *
- * @a: first integer 
+ * @a: first integer
  * @b: second integer to be checked
  *
  * Return: a+b
