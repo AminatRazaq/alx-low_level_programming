@@ -11,7 +11,7 @@
 
 void times_table(void)
 {
-	int s = 0, e = 9, i = 0, product;
+	int s = 0, e = 9, i = 0, product = 0;
 
 	while (i  <= 9)
 	{
@@ -31,7 +31,7 @@ void times_table(void)
 			else
 				_putchar(' ');
 		}
-		if (10 > product)
+		if (product < 10)
 			_putchar(product + '0');
 		else
 		{
