@@ -13,7 +13,7 @@
 int _abs(int n)
 {
 	if (n < 0)
-		n *= -1 /* '*' is multiply to make +ve*/
+		n *= -1; /* '*' is multiply to make +ve*/
 
 	return (n);
 }
