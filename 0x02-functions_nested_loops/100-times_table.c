@@ -29,7 +29,7 @@ void print_times_table(int n)
 			{
 				_putchar(',');/*, b4 space*/
 				_putchar(' ');/*space b4 digit*/
-				if (c < 9)/*for first digit*/
+				if (c <= 9)/*for first digit*/
 				{
 					_putchar(' ');
 					_putchar(' ');
