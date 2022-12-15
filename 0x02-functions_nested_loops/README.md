@@ -11,4 +11,9 @@ I'm federal agent Jack Bauer, and today is the longest day of my life
 Learn your times table
 a + b
 98 Battery Street, the OG
+The World looks like a multiplication-table
+Nature made the natural numbers
+a program that prints the first 50 Fibonacci number
+Even Liber Abbaci
+a program that finds and prints the first 98 Fibonacci numbers
 
