@@ -18,17 +18,18 @@ int main(void)
 
 	a = 1;
 	b = 2; /*first and second number*/
+	p = 0;
 
 	for (i = 1; i <= 33; i++)/*i fixed 33 personally*/
 	{
 		result = a + b;
 		a = b;
 		b = result;
-		if (result <= 4000000)
+		if (a <= 4000000)
 		{
-			n = result % 2;
+			n = a % 2;
 			if (n == 0)
-				p = p + result;
+				p = p + a;
 		}
 	}
 	printf("%d\n", p);
