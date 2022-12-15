@@ -3,17 +3,16 @@
 /**
  * main - check the code
  *
- *
+ *@i: number of iterations
  * Return: absolutevalue of the number given
  *
  */
 
-int main(void)
+int main(int i)
 {
 	int a;
 	int b;
 	int result;
-	int i;
 
 	a = 1;
 	b = 2; /*first and second number*/
@@ -28,5 +27,5 @@ int main(void)
 		a = b;
 		b = result;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
