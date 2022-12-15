@@ -11,17 +11,18 @@ int main(void)
 {
 	int a;
 	int i;
-	int b;
+	int m;
+	int n;
 
 	a = 0;
 
 	for (i = 1; i < 1024; i++)
 	{
-		if ((i % 3) == 0)
-			b = i;
-		else if ((i % 5) == 0)
-			b = i;
-		a = a + b;
+		n = i % 3;
+		m = i % 5;
+		if (n == 0 || m == 0)
+			a = a + i;
 	}
-	putchar('\n');
+	printf("%d\n", a);
+	return (0);
 }
