@@ -16,13 +16,17 @@ int main(void)
 	int i;
 
 	a = 1;
-	b = 1; /*first and second number*/
+	b = 2; /*first and second number*/
 
 	for (i = 1; i <= 50; i++)
 	{
-		printf("%d ", a);
+		if (a == 1)
+			printf("%d", a);
+		else
+			printf(", %d", a);
 		result = a + b;
 		a = b;
 		b = result;
 	}
+	_putchar('\n');
 }
