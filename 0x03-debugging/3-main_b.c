@@ -28,7 +28,7 @@ int main(void)
   
 
   
-  month = 3;
+  month = 2;
   
   day = 29;
   
