@@ -8,9 +8,10 @@
  *
  */
 
-int main(int i)
+int main()
 {
 	int a;
+	int i;
 	int b;
 	int result;
 
