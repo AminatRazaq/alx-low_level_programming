@@ -24,5 +24,4 @@ int main(void)
 		a = a + b;
 	}
 	putchar('\n');
-	return (0);
 }
