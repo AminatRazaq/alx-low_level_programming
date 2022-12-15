@@ -9,24 +9,28 @@
 
 int main(void)
 {
-	long a;
+	int a;
 	int i;
-	long b;
-	long result;
+	int b;
+	int result;
+	int p;
+	int n;
 
 	a = 1;
 	b = 2; /*first and second number*/
 
-	for (i = 1; i <= 50; i++)
+	for (i = 1; i <= 33; i++)/*i fixed 33 personally*/
 	{
-		if (a == 1)
-			printf("%ld", a);
-		else
-			printf(", %ld", a);
 		result = a + b;
 		a = b;
 		b = result;
+		if (result <= 4000000)
+		{
+			n = result % 2;
+			if (n == 0)
+				p = p + result;
+		}
 	}
-	putchar('\n');
+	printf("%d\n", p);
 	return (0);
 }
