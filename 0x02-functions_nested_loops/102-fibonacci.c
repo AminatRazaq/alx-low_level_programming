@@ -29,4 +29,5 @@ int main()
 		b = result;
 	}
 	putchar('\n');
+	return (0);
 }
