@@ -9,23 +9,19 @@
 
 int main(void)
 {
-	long a;
+	int a;
 	int i;
-	long b;
-	long result;
+	int b;
 
-	a = 1;
-	b = 2; /*first and second number*/
+	a = 0;
 
-	for (i = 1; i <= 50; i++)
+	for (i = 1; i < 1024; i++)
 	{
-		if (a == 1)
-			printf("%ld", a);
-		else
-			printf(", %ld", a);
-		result = a + b;
-		a = b;
-		b = result;
+		if (i % 3 == 0)
+			b = i;
+		else if (i % 5 == 0)
+			b = i;
+		a = a + b;
 	}
 	putchar('\n');
 	return (0);
