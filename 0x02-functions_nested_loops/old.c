@@ -7,12 +7,12 @@
  *
  */
 
-void main()
+int main(void)
 {
-	long a;
+	int a;
 	int i;
-	long b;
-	long result;
+	int b;
+	int result;
 
 	a = 1;
 	b = 2; /*first and second number*/
@@ -20,9 +20,9 @@ void main()
 	for (i = 1; i <= 50; i++)
 	{
 		if (a == 1)
-			printf("%ld", a);
+			printf("%d", a);
 		else
-			printf(", %ld", a);
+			printf(", %d", a);
 		result = a + b;
 		a = b;
 		b = result;
