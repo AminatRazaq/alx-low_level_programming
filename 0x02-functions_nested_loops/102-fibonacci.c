@@ -17,7 +17,7 @@ int main(void)
 	a = 1;
 	b = 2; /*first and second number*/
 
-	for (i = 1; i <= 51; i++)
+	for (i = 1; i <= 50; i++)
 	{
 		if (a == 1)
 			printf("%d", a);
