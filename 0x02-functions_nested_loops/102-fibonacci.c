@@ -7,7 +7,7 @@
  *
  */
 
-void main()
+int main(void)
 {
 	long a;
 	int i;
