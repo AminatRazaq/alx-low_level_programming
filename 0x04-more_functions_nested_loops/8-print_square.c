@@ -22,9 +22,9 @@ void print_square(int size)
 	}
 	else
 	{
-		for (cnt1 = 0; cnt1 <= size; cnt1++)
+		for (cnt1 = 0; cnt1 < size; cnt1++)
 		{
-			for (cnt2 = 0; cnt2 <= size; cnt2++)
+			for (cnt2 = 0; cnt2 < size; cnt2++)
 			{
 				_putchar('#');
 			}
