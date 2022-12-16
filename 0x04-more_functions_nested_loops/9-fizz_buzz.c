@@ -10,12 +10,9 @@
 
 int main(void)
 {
-	int Fizz;
-	int Buzz;
-	int FizzBuzz;
-	int n;
+	int n = 1;
 
-	for  (n = 1; n <= 100; n++)
+	while  (n <= 100)
 	{
 		if (n % 3 == 0)
 			printf("Fizz");
