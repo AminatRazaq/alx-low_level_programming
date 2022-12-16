@@ -2,28 +2,33 @@
 #include <stdio.h>
 
 /**
- * print_line - print 0-9 except 2 and 4
- * @n: number of times _ is done
+ * print_triangle - print triangles
+ * @size: number of times _ is done
  *
  * Return: 0 on success
  *
  */
 
-void print_line(int n)
+void print_triangle(int size)
 {
-	int a = 0;/* number of iterations*/
+	int sta = 0, end = size, cnt;
 
-	if (n <= 0)
-	{
+	if (size <= 0)
 		_putchar('\n');
-	}
 	else
 	{
-		while (a < n)
+		for (cnt = 0; cnt < end; cnt++)
 		{
-			_putchar('_');
-			a++;
+			while (sta < end)
+			{
+				if ((sta + cnt + 1) >= end)
+					_putchar('#');
+				else
+					_putchar(' ');
+				sta++;
+			}
+			sta = 0;
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
