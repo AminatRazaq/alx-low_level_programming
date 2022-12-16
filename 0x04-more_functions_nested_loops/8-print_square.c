@@ -11,10 +11,7 @@
 
 void print_square(int size)
 {
-	int cnt1;
-	int cnt2;
-	int endcnt1;
-	int endcnt2;
+	int cnt = 0, start;
 
 	if (size <= 0)
 	{
@@ -22,13 +19,14 @@ void print_square(int size)
 	}
 	else
 	{
-		for (cnt1 = 0; cnt1 < size; cnt1++)
+		for (start = 0; start < size; start++)
 		{
-			for (cnt2 = 0; cnt2 < size; cnt2++)
+			while (cnt < size)
 			{
 				_putchar('#');
+				cnt++;
 			}
-			cnt2 = 0;
+			cnt = 0;
 			_putchar('\n');
 		}
 	}
