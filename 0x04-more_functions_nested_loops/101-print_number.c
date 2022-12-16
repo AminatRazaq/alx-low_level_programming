@@ -15,12 +15,12 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar('_');
+		_putchar('-');
 		num = -num;
 	}
 	if ((num / 10) > 0)/*numbers greater than 10*/
 	{
-		print_number(num);
+		print_number(num / 10);/*reads all except last digit8*/
 	}
 	_putchar((num % 10) + '0');
 }
