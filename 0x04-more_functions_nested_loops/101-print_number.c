@@ -15,7 +15,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar('-');
+		_putchar('_');
 		num = -num;
 	}
 	if ((num / 10) > 0)/*numbers greater than 10*/
