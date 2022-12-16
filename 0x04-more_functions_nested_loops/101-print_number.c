@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_number - print triangles
- * @n: number of times _ is done
+ * print_number - print an integer number
+ * @n: an integer number
  *
  * Return: 0 on success
  *
@@ -11,5 +11,11 @@
 
 void print_number(int n)
 {
-	_putchar(n++);
+	unsigned long num = n;
+
+	if (n < 0)
+	{
+		num = -num;
+	}
+	print_number(num);
 }
