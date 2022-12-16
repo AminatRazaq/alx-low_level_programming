@@ -10,17 +10,17 @@
 
 int main(void)
 {
-	int n = 1;
+	int n = 1, stop = 100;
 
 	while  (n <= 100)
 	{
 		if (n % 3 == 0)
 			printf("Fizz");
-		else if (n % 5 == 0)
+		if (n % 5 == 0)
 			printf("Buzz");
-		else if (n % 3 != 0 && n % 5 != 0)
+		if (n % 3 != 0 && n % 5 != 0)
 			printf("%d", n);
-		putchar(n == 100 ? '\n' : ' ');
+		putchar(n == stop ? '\n' : ' ');
 		n++;
 	}
 	return (0);
