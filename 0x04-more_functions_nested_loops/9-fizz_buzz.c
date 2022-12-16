@@ -2,28 +2,29 @@
 #include <stdio.h>
 
 /**
- * print_line - print 0-9 except 2 and 4
- * @n: number of times _ is done
+ * main - check the code
  *
  * Return: 0 on success
  *
  */
 
-void print_line(int n)
+int main(void)
 {
-	int a = 0;/* number of iterations*/
+	int Fizz;
+	int Buzz;
+	int FizzBuzz;
+	int n;
 
-	if (n <= 0)
+	for  (n = 1; n <= 100; n++)
 	{
-		_putchar('\n');
+		if (n % 3 == 0)
+			printf("Fizz");
+		else if (n % 5 == 0)
+			printf("Buzz");
+		else if (n % 3 != 0 && n % 5 != 0)
+			printf("%d", n);
+		putchar(n == 100 ? '\n' : ' ');
+		n++;
 	}
-	else
-	{
-		while (a < n)
-		{
-			_putchar('_');
-			a++;
-		}
-		_putchar('\n');
-	}
+	return (0);
 }
