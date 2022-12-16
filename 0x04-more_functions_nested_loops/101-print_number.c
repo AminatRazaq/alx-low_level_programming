@@ -4,14 +4,11 @@
 /**
  * print_number - print an integer number
  * @n: an integer number
- *
- * Return: 0 on success
- *
  */
 
 void print_number(int n)
 {
-	unsigned long num = n;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
