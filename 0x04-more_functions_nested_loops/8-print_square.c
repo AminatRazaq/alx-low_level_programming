@@ -2,28 +2,33 @@
 #include <stdio.h>
 
 /**
- * print_line - print 0-9 except 2 and 4
- * @n: number of times _ is done
+ * print_square - check code
+ * @size: number of times # is done
  *
  * Return: 0 on success
  *
  */
 
-void print_line(int n)
+void print_square(int size)
 {
-	int a = 0;/* number of iterations*/
+	int cnt1;
+	int cnt2;
+	int endcnt1;
+	int endcnt2;
 
-	if (n <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		while (a < n)
+		for (cnt1 = 0; cnt1 <= size; cnt1++)
 		{
-			_putchar('_');
-			a++;
+			for (cnt2 = 0; cnt2 <= size; cnt2++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
