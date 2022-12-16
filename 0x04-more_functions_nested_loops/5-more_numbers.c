@@ -24,5 +24,6 @@ void more_numbers(void)
 			}
 			_putchar((b % 10) + '0');/*runs for 0-14*/
 		_putchar('\n');
+		}
 	}
 }
