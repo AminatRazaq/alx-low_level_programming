@@ -9,7 +9,7 @@
  *
  */
 
-void print_line(int n);
+void print_line(int n)
 {
 	int a = 0;/* number of iterations*/
 
