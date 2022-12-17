@@ -1,36 +1,31 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - print triangles
+ * main - print the largest prime number
  *
  * Return: 0 on success
- *
  */
 
-int main(int)
+int main(void)
 {
-	int i, j, num, isPrime;
+	long prime = 612852475143;
+	long div; /*612852475143 is divided by div*/
 
-	for (i = 2; i <= num; i++)
+	while (div < (prime / 2))
 	{
-		if (num % i == 0)
+		if ((prime % 2) == 0)
 		{
-			isPrime = 1;
-
-			for (j = 2; j <= i / 2; j++)
+			prime /= 2;
+			continue;
+		}
+		for (div = 3; div < (prime / 2); div += 2)
+		{
+			if ((prime % div) == 0)
 			{
-				if (i % j == 0)
-				{
-					isPrime = 0;
-					break;
-				}
-			}
-			if (isPrime == 1)
-			{
-				printf("%d, ", i);
+				prime /= div;
 			}
 		}
 	}
+	printf("%ld\n", prime);
 	return (0);
 }
