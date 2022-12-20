@@ -19,7 +19,8 @@ void print_rev(char *s)
 	}
 	while (i)
 	{
-		_putchar(*s--);/*to reverse characters*/
+		s--;
+		_putchar(*s);/*to reverse characters*/
 		i--;
 	}
 	_putchar('\n');
