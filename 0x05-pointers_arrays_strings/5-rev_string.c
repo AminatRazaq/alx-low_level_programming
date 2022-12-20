@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * rev-string - prints the string in reverse
+ * rev_string - prints the string in reverse
  *
  * @s: the string to reverse
  *
@@ -10,7 +10,7 @@
  */
 void rev_string(char *s)
 {
-	int i = 0; j = 0;/* both are conunters*/
+	int i = 0, j = 0;/* both are conunters*/
 	char last_char;
 
 	while (*s)
@@ -27,4 +27,5 @@ void rev_string(char *s)
 		last_char = s[last - j];
 		s[last - j] = s[j];
 		s[j] = last_char;
+	}
 }
