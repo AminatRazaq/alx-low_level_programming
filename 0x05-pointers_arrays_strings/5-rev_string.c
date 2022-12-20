@@ -20,7 +20,7 @@ void rev_string(char *s)
 	}
 	for (j = 0; j < i; j++)
 		s--;
-	for (i = 0; j < (i / 2); j++)
+	for (j = 0; j < (i / 2); j++)
 	{
 		int last = i - 1;/* last is a fixed word in C*/
 
