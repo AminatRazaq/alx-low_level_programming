@@ -2,17 +2,17 @@
 #include "main.h"
 
 /**
- * _puts - prints  the string
+ * print_rev - prints the string in reverse
  *
- * @str: the string to print
+ * @s: the string to print
  *
- * Return: returns @str on success
+ * Return: returns @s on success
  */
-void _puts(char *str)
+void print_rev(char *s)
 {
-	while (*str)
+	while (*s)
 	{
-		_putchar(*str++);
+		_putchar(*s--);
 	}
 	_putchar('\n');
 }
