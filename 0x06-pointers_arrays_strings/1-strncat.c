@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenate two strings
+ * *_strncat - concatenate two strings
  *
  * @dest: a pointer to the string to be concatenated
  * @src: the source string appended to @dest
@@ -18,6 +18,6 @@ char *_strncat(char *dest, char *src, int n)
 		dest_len++;
 
 	for (index = 0; src[index] && index < n; index++)
-		dest[dest_len++] - src[index];
+		dest[dest_len++] = src[index];
 	return (dest);
 }
