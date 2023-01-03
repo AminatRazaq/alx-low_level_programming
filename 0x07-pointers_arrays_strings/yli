@@ -1,0 +1,6 @@
+abc123
+chmod u+x 101-crackme_password
+git add .
+git commit -m "101-crackme_password"
+git push
+ls
