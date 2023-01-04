@@ -21,7 +21,7 @@ int _eval_num(int num, int i)
  * @num: number
  * Return: 1 on prime number else 0
  */
-int is_prime_number(int n)
+int is_prime_number(int num)
 {
 	int i = 2;
 
