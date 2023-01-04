@@ -17,3 +17,20 @@ int _calcu(int m, int n)
 	return (-1);
 	return (-1);
 }
+
+/**
+ * _sqrt_recursion - sqrt
+ * @n: integer
+ * Return: sqrt recursion
+ */
+int _sqrt_recursion(int n)
+{
+	int m = 0;
+
+	if (m < 0)/*i.e.m is negtive*/
+		return (-1);
+	else
+	{
+		return (_calcu(m,n));
+	}
+}
