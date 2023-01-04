@@ -17,4 +17,3 @@ int _calcu(int m, int n)
 	return (-1);
 	return (-1);
 }
-
