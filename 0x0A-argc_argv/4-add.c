@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 /**
- * main - multiplies two numbers
+ * main - add positive numbers
  * @argc: arguement count
  * @argv: arguement vector
  * Return: upon success 0
@@ -16,8 +17,8 @@ int main(int argc, char *argv[])
 		a = atoi(argv[1]);/*atoi =change string to integer*/
 		b = atoi(argv[2]);
 		printf("%d\n", a * b);
-		return (0);
+		return (o);
 	}
 	printf("Error\n");
-	return (1);
+	return (0);
 }
