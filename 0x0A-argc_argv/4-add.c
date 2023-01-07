@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 #include <stdlib.h>
 /**
  * isNumeric - checks if a string is a number or not
