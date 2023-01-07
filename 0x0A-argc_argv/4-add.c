@@ -2,6 +2,21 @@
 #include "main.h"
 #include <stdlib.h>
 /**
+ * isNumeric - checks if a string is a number or not
+ * @str: checked string
+ * Return: if number,0 else 1
+ */
+int isNumeric(const char *str)
+{
+	while (*str != '\0')
+	{
+		if (*str < '0' || *str > '9')/* all digits are 0-9*/
+			return (0);
+		str++;
+	}
+	return (1);/* if not digit*/
+}
+/**
  * main - add positive numbers
  * @argc: arguement count
  * @argv: arguement vector
@@ -9,16 +24,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int a;/*first number*/
-	int b;/*second number*/
+	int i = 1;/*initialize from 1 not to miss the argv[0]*/
+	int sum = 0;
 
-	if (argc == 3)/*3 arg.i.e filename, first num, second num*/
+	while (i < argc)
 	{
-		a = atoi(argv[1]);/*atoi =change string to integer*/
-		b = atoi(argv[2]);
-		printf("%d\n", a * b);
-		return (o);
+		if (isNumeric(argv[i]) == 0)
+		{
+			printf("Error");
+			return (1);
+		}
+		sum = sum + atoi(argv[i]);
+		i++;
 	}
-	printf("Error\n");
+	printf("%d\n", sum);
 	return (0);
 }
