@@ -52,10 +52,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	size = _strlen(str) + 1;
-	dt = (char *) malloc(size *sizeof(char));
+	dt = (char *) malloc(size * sizeof(char));
 	if (dt == 0)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	_strcpy(dt, str);
 	return (dt);
