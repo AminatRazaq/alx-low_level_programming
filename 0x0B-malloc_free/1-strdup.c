@@ -39,8 +39,8 @@ char *_strcpy(char *dest, char *src)
 }
 /**
  * _strdup - returns a pointer to a newly allocated space
- * str: array of elements
- * return: pointer
+ * @str: array of elements
+ * Return: pointer
  */
 char *_strdup(char *str)
 {
