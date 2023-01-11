@@ -9,7 +9,7 @@ char **strtow(char *str);
 /**
  * word_len - locates the index marking the end of the 1st word in a string
  * @str: string to be searched
- * return: index marking end of intial word pointed by str
+ * Return: index marking end of intial word pointed by @str
  */
 int word_len(char *str)
 {
@@ -23,7 +23,7 @@ int word_len(char *str)
 	return (len);
 }
 /**
- * count-words - count no of words in a string
+ * count_words - count no of words in a string
  * @str: strring searched
  * Return: no of words in @str
  */
