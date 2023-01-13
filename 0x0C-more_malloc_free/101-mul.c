@@ -8,7 +8,7 @@
  * @argv: args (argv also num2 here
  * Return: integer
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	unsigned long mul;
 	int i, j;
