@@ -12,7 +12,7 @@
 struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
 /*we use dog.h as the header file, so we include all the prototypes*/
