@@ -39,7 +39,7 @@ char *_strcopy(char *dest, char *src)
 /**
  * new_dog - creates a new dog
  * @name: name
- * @age; age
+ * @age: age
  * @owner: owner
  *
  * Return: the new struct dog
