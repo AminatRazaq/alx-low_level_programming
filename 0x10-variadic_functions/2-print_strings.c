@@ -7,6 +7,7 @@
  * @n: number of strings passed to the function
  * @separator: the string to be printed between the strings
  * @...: A variable number of numbers to be printed
+ * Return: no return
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -24,7 +25,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("nil");
 		else
 			printf("%s", str);
-		if (separator != NULL && i != (n - 1))
+		if (i < n - 1)
+			if (separator)
 			/*para(i) isnt last string and sep. isnt NULL*/
 			printf("%s", separator);
 	}
