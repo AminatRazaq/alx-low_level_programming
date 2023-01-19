@@ -19,9 +19,6 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 		while (t_arg[j])
-
-			j = 0;
-		while (t_arg[j])
 		{
 			if (format[i] == t_arg[j] && c)
 			{
@@ -44,7 +41,7 @@ void print_all(const char * const format, ...)
 				str = va_arg(para, char *), c = 1;
 				if (!str)
 				{
-					printf("(nil");
+					printf("(nil)");
 					break;
 				}
 				printf("%s", str);
