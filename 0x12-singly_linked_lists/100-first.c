@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void hare_and_the_tortoise hare(void);
+void __attribute__((constructor)) hare(void);
+/*__attribute__((constructor)):execute a function when the program starts*/
 /**
  * hare_tortoise - prints a string before the main function is excuted
  */
