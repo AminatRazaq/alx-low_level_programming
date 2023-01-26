@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+void hare_and_the_tortoise hare(void);
 /**
  * hare_tortoise - prints a string before the main function is excuted
  */
