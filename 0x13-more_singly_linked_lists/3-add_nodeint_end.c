@@ -15,17 +15,19 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	/*last is a pointer to the head and new(temporary address of n)*/
 	new = malloc(sizeof(listint_t));
 
+	if (new == NULL)
+		return (NULL);
 	last = *head;/*last is pointer to head, the beginning, it checks all nodes*/
 	/*after checking it updates the two partsthat makes up each node*/
 	new->n = n;/*updates n*/
 	new->next = NULL;/*remmener end of a list must be NULL*/
 
-	if (new == NULL)
-		return (NULL);
-
-	while (last->next != NULL)
+	if (*head == NULL)
+		*head = new;
+	else
 	{
-		last = last->next;
+		while (last->next != NULL)
+			last = last->next;
 		last->next = new;/*updates with the new value*/
 	}
 
