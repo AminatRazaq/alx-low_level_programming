@@ -12,7 +12,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i;/*for counting through each digit in a binary number*/
-	unsigned int decimal;
+	unsigned int decimal = 0;
 
 	if (!b)
 		return (0);
