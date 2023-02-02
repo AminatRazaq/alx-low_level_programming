@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	int i;/*for counting through each digit in a binary number*/
 	unsigned int decimal;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
 
 	for (i = 0; b[i]; i++)
@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] != '0' || b[i] != '1')
 			return (0);
 
-		decimal = (decimal * 2) + (b[i]);
+		decimal = 2 * decimal + (b[i] - '0');
 	}
 	return (decimal);
 }
