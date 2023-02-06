@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *create_buffer(char *filename);
+char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
  * create_buffer - allocates 1024 bytes for a buffer
- * @filename: the name of the file bufferstoringchars for
+ * @file: the name of the file bufferstoringchars for
  *
  * Return: A pointer to the newly allocated buffer
  */
 
-char *create_buffer(char *filename)
+char *create_buffer(char *file)
 {
 	char *buffer;
 
@@ -20,7 +20,7 @@ char *create_buffer(char *filename)
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
-				"Error: Can't write to %s\n", filename);
+				"Error: Can't write to %s\n", filei);
 		exit(99);
 	}
 
@@ -52,7 +52,7 @@ void close_file(int fd)
  *
  * Return: 0 on success.
  *
- * Decription: if the arguemnet.....
+ * Description: if the arguemnet.....
  */
 int main(int argc, char *argv[])
 {
