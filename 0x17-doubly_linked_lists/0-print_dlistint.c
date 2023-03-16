@@ -14,7 +14,7 @@ size_t print_dlistint(const dlistint_t *h)
 	while (h)
 	{
 		nodes++;
-		h->next;
+		h = h->next;
 	}
 	return (nodes);
 }
