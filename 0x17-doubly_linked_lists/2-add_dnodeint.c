@@ -19,5 +19,5 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	temp->next = *head; /*https://www.youtube.com/watch?v=SPKCATQ--KY*/
 	(*head)->prev = temp;
 	*head = temp;
-	return (temp);
+	return (*head);
 }
