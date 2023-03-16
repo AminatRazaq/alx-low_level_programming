@@ -6,6 +6,8 @@
  *
  * Return: number of nodes
  */
+/*https://www.youtube.com/watch?v=fPfJRQ8999k*/
+/*dlistint_t and n are in the struct in lists.h file*/
 
 size_t print_dlistint(const dlistint_t *h)
 {
