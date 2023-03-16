@@ -16,7 +16,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	temp->prev = NULL;/*this and the next 2 lines are used to create a node*/
 	temp->n = n;
 	temp->next = NULL;
-	temp->next = *head; /*https://www.youtube.com/watch?v=SPKCATQ--KY*/
+	temp->next = *head;/*https://www.youtube.com/watch?v=SPKCATQ--KY*/
 	(*head)->prev = temp;
 	*head = temp;
 	return (temp);
